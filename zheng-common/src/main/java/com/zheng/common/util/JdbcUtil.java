@@ -7,8 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * JDBC工具类
- * Created by ZhangShuzheng on 2017/1/10.
+ * JDBC工具类 Created by ZhangShuzheng on 2017/1/10.
  */
 public class JdbcUtil {
 
@@ -31,15 +30,15 @@ public class JdbcUtil {
 	}
 
 	// 更新数据
-	public boolean updateByParams(String sql, List params) throws SQLException {
+	public boolean updateByParams(String sql, List<?> params) throws SQLException {
 		// 影响行数
 		int result = -1;
 		pstmt = conn.prepareStatement(sql);
 		int index = 1;
 		// 填充sql语句中的占位符
 		if (null != params && !params.isEmpty()) {
-			for (int i = 0; i < params.size(); i ++) {
-				pstmt.setObject(index ++, params.get(i));
+			for (int i = 0; i < params.size(); i++) {
+				pstmt.setObject(index++, params.get(i));
 			}
 		}
 		result = pstmt.executeUpdate();
@@ -47,12 +46,12 @@ public class JdbcUtil {
 	}
 
 	// 查询多条记录
-	public List<Map> selectByParams(String sql, List params) throws SQLException {
-		List<Map> list = new ArrayList<> ();
+	public List<Map<String, Object>> selectByParams(String sql, List<?> params) throws SQLException {
+		List<Map<String, Object>> list = new ArrayList<>();
 		int index = 1;
 		pstmt = conn.prepareStatement(sql);
 		if (null != params && !params.isEmpty()) {
-			for (int i = 0; i < params.size(); i ++) {
+			for (int i = 0; i < params.size(); i++) {
 				pstmt.setObject(index++, params.get(i));
 			}
 		}
@@ -60,8 +59,8 @@ public class JdbcUtil {
 		ResultSetMetaData metaData = rs.getMetaData();
 		int colsLen = metaData.getColumnCount();
 		while (rs.next()) {
-			Map map = new HashMap(colsLen);
-			for (int i = 0; i < colsLen; i ++) {
+			Map<String, Object> map = new HashMap<String, Object>(colsLen);
+			for (int i = 0; i < colsLen; i++) {
 				String columnName = metaData.getColumnName(i + 1);
 				Object columnValue = rs.getObject(columnName);
 				if (null == columnValue) {
@@ -78,14 +77,14 @@ public class JdbcUtil {
 	public void release() {
 		try {
 			if (null != rs) {
-                rs.close();
-            }
+				rs.close();
+			}
 			if (null != pstmt) {
-                pstmt.close();
-            }
+				pstmt.close();
+			}
 			if (null != conn) {
-                conn.close();
-            }
+				conn.close();
+			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

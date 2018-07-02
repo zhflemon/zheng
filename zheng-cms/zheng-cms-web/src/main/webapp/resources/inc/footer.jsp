@@ -4,5 +4,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<c:set var="basePath" value="${pageContext.request.contextPath}"/>
-<script>var BASE_PATH = '${basePath}';</script>
+<c:set var="basePath" value="${pageContext.request.contextPath}" />
+<script>
+	var BASE_PATH = '${basePath}';
+</script>

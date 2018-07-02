@@ -35,6 +35,7 @@ import java.util.Map;
 @RequestMapping("/manage/setting")
 public class CmsSettingController extends BaseController {
 
+	@SuppressWarnings("unused")
 	private static final Logger LOGGER = LoggerFactory.getLogger(CmsSettingController.class);
 	
 	@Autowired

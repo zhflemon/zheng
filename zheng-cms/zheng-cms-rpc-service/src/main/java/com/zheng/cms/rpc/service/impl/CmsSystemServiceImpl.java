@@ -21,7 +21,8 @@ import org.springframework.transaction.annotation.Transactional;
 @BaseService
 public class CmsSystemServiceImpl extends BaseServiceImpl<CmsSystemMapper, CmsSystem, CmsSystemExample> implements CmsSystemService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(CmsSystemServiceImpl.class);
+    @SuppressWarnings("unused")
+	private static final Logger LOGGER = LoggerFactory.getLogger(CmsSystemServiceImpl.class);
 
     @Autowired
     CmsSystemMapper cmsSystemMapper;

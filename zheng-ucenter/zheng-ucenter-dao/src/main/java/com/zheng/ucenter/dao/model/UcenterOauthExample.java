@@ -67,7 +67,11 @@ public class UcenterOauthExample implements Serializable {
     }
 
     protected abstract static class GeneratedCriteria implements Serializable {
-        protected List<Criterion> criteria;
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+		protected List<Criterion> criteria;
 
         protected GeneratedCriteria() {
             super();
@@ -238,15 +242,25 @@ public class UcenterOauthExample implements Serializable {
         }
     }
 
-    public static class Criteria extends GeneratedCriteria implements Serializable {
+	public static class Criteria extends GeneratedCriteria implements Serializable {
 
-        protected Criteria() {
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+
+		protected Criteria() {
             super();
         }
     }
 
     public static class Criterion implements Serializable {
-        private String condition;
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+
+		private String condition;
 
         private Object value;
 

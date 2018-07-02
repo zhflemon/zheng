@@ -21,7 +21,8 @@ import org.springframework.transaction.annotation.Transactional;
 @BaseService
 public class UpmsRoleServiceImpl extends BaseServiceImpl<UpmsRoleMapper, UpmsRole, UpmsRoleExample> implements UpmsRoleService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(UpmsRoleServiceImpl.class);
+    @SuppressWarnings("unused")
+	private static final Logger LOGGER = LoggerFactory.getLogger(UpmsRoleServiceImpl.class);
 
     @Autowired
     UpmsRoleMapper upmsRoleMapper;

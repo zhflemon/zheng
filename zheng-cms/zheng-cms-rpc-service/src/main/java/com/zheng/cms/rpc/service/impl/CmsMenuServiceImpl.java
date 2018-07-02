@@ -21,7 +21,8 @@ import org.springframework.transaction.annotation.Transactional;
 @BaseService
 public class CmsMenuServiceImpl extends BaseServiceImpl<CmsMenuMapper, CmsMenu, CmsMenuExample> implements CmsMenuService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(CmsMenuServiceImpl.class);
+    @SuppressWarnings("unused")
+	private static final Logger LOGGER = LoggerFactory.getLogger(CmsMenuServiceImpl.class);
 
     @Autowired
     CmsMenuMapper cmsMenuMapper;

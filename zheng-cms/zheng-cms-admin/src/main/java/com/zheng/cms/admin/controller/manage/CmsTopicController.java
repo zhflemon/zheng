@@ -34,6 +34,7 @@ import java.util.Map;
 @RequestMapping("/manage/topic")
 public class CmsTopicController extends BaseController {
 
+	@SuppressWarnings("unused")
 	private static final Logger LOGGER = LoggerFactory.getLogger(CmsTopicController.class);
 	
 	@Autowired

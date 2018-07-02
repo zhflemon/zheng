@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class ManageInterceptor extends HandlerInterceptorAdapter {
 
+	@SuppressWarnings("unused")
 	private static final Logger LOGGER = LoggerFactory.getLogger(ManageInterceptor.class);
 
 	@Override

@@ -8,7 +8,12 @@ import org.apache.shiro.session.mgt.SimpleSession;
  */
 public class UpmsSession extends SimpleSession {
 
-    public static enum OnlineStatus {
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 8179248499955022070L;
+
+	public static enum OnlineStatus {
         /**
          * 在线
          */

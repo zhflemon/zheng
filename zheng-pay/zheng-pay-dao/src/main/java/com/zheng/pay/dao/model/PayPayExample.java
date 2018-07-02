@@ -67,7 +67,11 @@ public class PayPayExample implements Serializable {
     }
 
     protected abstract static class GeneratedCriteria implements Serializable {
-        protected List<Criterion> criteria;
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 2526810855040147936L;
+		protected List<Criterion> criteria;
 
         protected GeneratedCriteria() {
             super();
@@ -298,15 +302,25 @@ public class PayPayExample implements Serializable {
         }
     }
 
-    public static class Criteria extends GeneratedCriteria implements Serializable {
+	public static class Criteria extends GeneratedCriteria implements Serializable {
 
-        protected Criteria() {
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = -8230408396433669826L;
+
+		protected Criteria() {
             super();
         }
     }
 
     public static class Criterion implements Serializable {
-        private String condition;
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 674649930407426408L;
+
+		private String condition;
 
         private Object value;
 

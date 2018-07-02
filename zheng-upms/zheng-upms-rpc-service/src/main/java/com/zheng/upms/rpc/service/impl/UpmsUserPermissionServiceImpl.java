@@ -23,7 +23,8 @@ import org.springframework.transaction.annotation.Transactional;
 @BaseService
 public class UpmsUserPermissionServiceImpl extends BaseServiceImpl<UpmsUserPermissionMapper, UpmsUserPermission, UpmsUserPermissionExample> implements UpmsUserPermissionService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(UpmsUserPermissionServiceImpl.class);
+    @SuppressWarnings("unused")
+	private static final Logger LOGGER = LoggerFactory.getLogger(UpmsUserPermissionServiceImpl.class);
 
     @Autowired
     UpmsUserPermissionMapper upmsUserPermissionMapper;

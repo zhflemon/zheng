@@ -10,7 +10,8 @@ import org.slf4j.LoggerFactory;
  */
 public class ApiServiceImpl implements ApiService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ApiServiceImpl.class);
+    @SuppressWarnings("unused")
+	private static final Logger LOGGER = LoggerFactory.getLogger(ApiServiceImpl.class);
 
     @Override
     public String hello(String name) {

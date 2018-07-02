@@ -34,6 +34,7 @@ import java.util.Map;
 @RequestMapping("/manage/menu")
 public class CmsMenuController extends BaseController {
 
+	@SuppressWarnings("unused")
 	private static final Logger LOGGER = LoggerFactory.getLogger(CmsMenuController.class);
 	
 	@Autowired

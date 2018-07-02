@@ -21,7 +21,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping(value = "/page")
 public class PageController extends BaseController {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(PageController.class);
+    @SuppressWarnings("unused")
+	private static final Logger LOGGER = LoggerFactory.getLogger(PageController.class);
 
     @Autowired
     private CmsPageService cmsPageService;

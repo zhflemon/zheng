@@ -21,7 +21,8 @@ import org.springframework.transaction.annotation.Transactional;
 @BaseService
 public class CmsPageServiceImpl extends BaseServiceImpl<CmsPageMapper, CmsPage, CmsPageExample> implements CmsPageService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(CmsPageServiceImpl.class);
+    @SuppressWarnings("unused")
+	private static final Logger LOGGER = LoggerFactory.getLogger(CmsPageServiceImpl.class);
 
     @Autowired
     CmsPageMapper cmsPageMapper;

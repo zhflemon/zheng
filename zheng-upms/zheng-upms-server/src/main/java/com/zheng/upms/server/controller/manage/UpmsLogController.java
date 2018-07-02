@@ -30,7 +30,8 @@ import java.util.Map;
 @RequestMapping("/manage/log")
 public class UpmsLogController extends BaseController {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(UpmsLogController.class);
+    @SuppressWarnings("unused")
+	private static final Logger LOGGER = LoggerFactory.getLogger(UpmsLogController.class);
 
     @Autowired
     private UpmsLogService upmsLogService;

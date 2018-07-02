@@ -18,8 +18,10 @@ public class RpcLogAspect {
 	private static final Logger LOGGER = LoggerFactory.getLogger(RpcLogAspect.class);
 
 	// 开始时间
+	@SuppressWarnings("unused")
 	private long startTime = 0L;
 	// 结束时间
+	@SuppressWarnings("unused")
 	private long endTime = 0L;
 
 	@Before("execution(* *..rpc..*.*(..))")

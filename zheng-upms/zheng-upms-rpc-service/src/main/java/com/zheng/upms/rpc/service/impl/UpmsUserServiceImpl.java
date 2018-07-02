@@ -21,7 +21,8 @@ import org.springframework.transaction.annotation.Transactional;
 @BaseService
 public class UpmsUserServiceImpl extends BaseServiceImpl<UpmsUserMapper, UpmsUser, UpmsUserExample> implements UpmsUserService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(UpmsUserServiceImpl.class);
+    @SuppressWarnings("unused")
+	private static final Logger LOGGER = LoggerFactory.getLogger(UpmsUserServiceImpl.class);
 
     @Autowired
     UpmsUserMapper upmsUserMapper;

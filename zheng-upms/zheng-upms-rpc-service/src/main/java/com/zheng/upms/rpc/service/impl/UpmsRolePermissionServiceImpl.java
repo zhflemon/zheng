@@ -26,7 +26,8 @@ import java.util.List;
 @BaseService
 public class UpmsRolePermissionServiceImpl extends BaseServiceImpl<UpmsRolePermissionMapper, UpmsRolePermission, UpmsRolePermissionExample> implements UpmsRolePermissionService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(UpmsRolePermissionServiceImpl.class);
+    @SuppressWarnings("unused")
+	private static final Logger LOGGER = LoggerFactory.getLogger(UpmsRolePermissionServiceImpl.class);
 
     @Autowired
     UpmsRolePermissionMapper upmsRolePermissionMapper;

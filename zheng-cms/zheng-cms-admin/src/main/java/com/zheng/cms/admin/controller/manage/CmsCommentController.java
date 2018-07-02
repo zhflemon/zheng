@@ -30,6 +30,7 @@ import java.util.Map;
 @RequestMapping("/manage/comment")
 public class CmsCommentController extends BaseController {
 
+	@SuppressWarnings("unused")
 	private static final Logger LOGGER = LoggerFactory.getLogger(CmsCommentController.class);
 	
 	@Autowired

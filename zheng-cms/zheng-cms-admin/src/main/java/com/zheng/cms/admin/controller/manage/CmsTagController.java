@@ -34,6 +34,7 @@ import java.util.Map;
 @RequestMapping("/manage/tag")
 public class CmsTagController extends BaseController {
 
+	@SuppressWarnings("unused")
 	private static final Logger LOGGER = LoggerFactory.getLogger(CmsTagController.class);
 	
 	@Autowired

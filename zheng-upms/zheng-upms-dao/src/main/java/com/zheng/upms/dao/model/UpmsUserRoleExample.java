@@ -66,8 +66,12 @@ public class UpmsUserRoleExample implements Serializable {
         distinct = false;
     }
 
-    protected abstract static class GeneratedCriteria implements Serializable {
-        protected List<Criterion> criteria;
+	protected abstract static class GeneratedCriteria implements Serializable {
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 7195490136874442413L;
+		protected List<Criterion> criteria;
 
         protected GeneratedCriteria() {
             super();
@@ -290,13 +294,23 @@ public class UpmsUserRoleExample implements Serializable {
 
     public static class Criteria extends GeneratedCriteria implements Serializable {
 
-        protected Criteria() {
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = -649571499140286383L;
+
+		protected Criteria() {
             super();
         }
     }
 
     public static class Criterion implements Serializable {
-        private String condition;
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 4938357990982229181L;
+
+		private String condition;
 
         private Object value;
 

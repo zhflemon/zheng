@@ -20,10 +20,12 @@ import java.util.List;
 @Controller
 public class IndexController extends BaseController {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(IndexController.class);
+    @SuppressWarnings("unused")
+	private static final Logger LOGGER = LoggerFactory.getLogger(IndexController.class);
 
-    @Autowired
-    private CmsMenuService cmsMenuService;
+    @SuppressWarnings("unused")
+	@Autowired
+	private CmsMenuService cmsMenuService;
 
     @Autowired
     private CmsCategoryService cmsCategoryService;

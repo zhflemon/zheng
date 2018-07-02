@@ -19,7 +19,7 @@ public class RequestUtil {
 	 */
 	public String removeParam(HttpServletRequest request, String paramName) {
 		String queryString = "";
-		Enumeration keys = request.getParameterNames();
+		Enumeration<?> keys = request.getParameterNames();
 		while (keys.hasMoreElements()) {
 			String key = (String) keys.nextElement();
 			if (key.equals(paramName)) {
@@ -87,7 +87,7 @@ public class RequestUtil {
 	 */
 	public static Map<String, String> getParameterMap(HttpServletRequest request) {
 		Map<String, String> result = new HashMap<>();
-		Enumeration parameterNames = request.getParameterNames();
+		Enumeration<?> parameterNames = request.getParameterNames();
 		while (parameterNames.hasMoreElements()) {
 			String parameterName = (String) parameterNames.nextElement();
 			result.put(parameterName, request.getParameter(parameterName));

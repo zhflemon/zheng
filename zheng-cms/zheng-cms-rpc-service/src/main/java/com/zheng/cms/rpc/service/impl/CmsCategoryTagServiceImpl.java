@@ -21,7 +21,8 @@ import org.springframework.transaction.annotation.Transactional;
 @BaseService
 public class CmsCategoryTagServiceImpl extends BaseServiceImpl<CmsCategoryTagMapper, CmsCategoryTag, CmsCategoryTagExample> implements CmsCategoryTagService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(CmsCategoryTagServiceImpl.class);
+    @SuppressWarnings("unused")
+	private static final Logger LOGGER = LoggerFactory.getLogger(CmsCategoryTagServiceImpl.class);
 
     @Autowired
     CmsCategoryTagMapper cmsCategoryTagMapper;

@@ -12,6 +12,7 @@ public class ZhengPayRpcServiceApplication {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(ZhengPayRpcServiceApplication.class);
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		LOGGER.info(">>>>> zheng-pay-rpc-service 正在启动 <<<<<");
 		new ClassPathXmlApplicationContext("classpath:META-INF/spring/*.xml");

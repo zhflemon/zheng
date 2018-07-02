@@ -13,17 +13,18 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
-* PayTypeService实现
-* Created by shuzheng on 2017/3/29.
-*/
+ * PayTypeService实现 Created by shuzheng on 2017/3/29.
+ */
 @Service
 @Transactional
 @BaseService
-public class PayTypeServiceImpl extends BaseServiceImpl<PayTypeMapper, PayType, PayTypeExample> implements PayTypeService {
+public class PayTypeServiceImpl extends BaseServiceImpl<PayTypeMapper, PayType, PayTypeExample>
+		implements PayTypeService {
 
-    private static final Logger log = LoggerFactory.getLogger(PayTypeServiceImpl.class);
+	@SuppressWarnings("unused")
+	private static final Logger LOGGER = LoggerFactory.getLogger(PayTypeServiceImpl.class);
 
-    @Autowired
-    PayTypeMapper payTypeMapper;
+	@Autowired
+	PayTypeMapper payTypeMapper;
 
 }

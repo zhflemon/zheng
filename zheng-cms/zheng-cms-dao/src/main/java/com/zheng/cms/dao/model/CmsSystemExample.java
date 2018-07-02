@@ -67,7 +67,11 @@ public class CmsSystemExample implements Serializable {
     }
 
     protected abstract static class GeneratedCriteria implements Serializable {
-        protected List<Criterion> criteria;
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 2252054865342856741L;
+		protected List<Criterion> criteria;
 
         protected GeneratedCriteria() {
             super();
@@ -498,15 +502,25 @@ public class CmsSystemExample implements Serializable {
         }
     }
 
-    public static class Criteria extends GeneratedCriteria implements Serializable {
+	public static class Criteria extends GeneratedCriteria implements Serializable {
 
-        protected Criteria() {
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 6589357047218171971L;
+
+		protected Criteria() {
             super();
         }
     }
 
     public static class Criterion implements Serializable {
-        private String condition;
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 4580838414282154895L;
+
+		private String condition;
 
         private Object value;
 

@@ -13,17 +13,19 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
-* PayOutOrderDetailService实现
-* Created by shuzheng on 2017/3/29.
-*/
+ * PayOutOrderDetailService实现 Created by shuzheng on 2017/3/29.
+ */
 @Service
 @Transactional
 @BaseService
-public class PayOutOrderDetailServiceImpl extends BaseServiceImpl<PayOutOrderDetailMapper, PayOutOrderDetail, PayOutOrderDetailExample> implements PayOutOrderDetailService {
+public class PayOutOrderDetailServiceImpl
+		extends BaseServiceImpl<PayOutOrderDetailMapper, PayOutOrderDetail, PayOutOrderDetailExample>
+		implements PayOutOrderDetailService {
 
-    private static final Logger log = LoggerFactory.getLogger(PayOutOrderDetailServiceImpl.class);
+	@SuppressWarnings("unused")
+	private static final Logger LOGGER = LoggerFactory.getLogger(PayOutOrderDetailServiceImpl.class);
 
-    @Autowired
-    PayOutOrderDetailMapper payOutOrderDetailMapper;
+	@Autowired
+	PayOutOrderDetailMapper payOutOrderDetailMapper;
 
 }

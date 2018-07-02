@@ -110,6 +110,7 @@ public abstract class BaseServiceImpl<Mapper, Record, Example> implements BaseSe
 		return 0;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Record> selectByExampleWithBLOBs(Example example) {
 		try {
@@ -128,6 +129,7 @@ public abstract class BaseServiceImpl<Mapper, Record, Example> implements BaseSe
 		return null;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Record> selectByExample(Example example) {
 		try {
@@ -146,6 +148,7 @@ public abstract class BaseServiceImpl<Mapper, Record, Example> implements BaseSe
 		return null;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Record> selectByExampleWithBLOBsForStartPage(Example example, Integer pageNum, Integer pageSize) {
 		try {
@@ -165,6 +168,7 @@ public abstract class BaseServiceImpl<Mapper, Record, Example> implements BaseSe
 		return null;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Record> selectByExampleForStartPage(Example example, Integer pageNum, Integer pageSize) {
 		try {
@@ -184,6 +188,7 @@ public abstract class BaseServiceImpl<Mapper, Record, Example> implements BaseSe
 		return null;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Record> selectByExampleWithBLOBsForOffsetPage(Example example, Integer offset, Integer limit) {
 		try {
@@ -203,6 +208,7 @@ public abstract class BaseServiceImpl<Mapper, Record, Example> implements BaseSe
 		return null;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Record> selectByExampleForOffsetPage(Example example, Integer offset, Integer limit) {
 		try {
@@ -222,6 +228,7 @@ public abstract class BaseServiceImpl<Mapper, Record, Example> implements BaseSe
 		return null;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public Record selectFirstByExample(Example example) {
 		try {
@@ -242,6 +249,7 @@ public abstract class BaseServiceImpl<Mapper, Record, Example> implements BaseSe
 		return null;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public Record selectFirstByExampleWithBLOBs(Example example) {
 		try {
@@ -262,6 +270,7 @@ public abstract class BaseServiceImpl<Mapper, Record, Example> implements BaseSe
 		return null;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public Record selectByPrimaryKey(Integer id) {
 		try {
@@ -427,6 +436,7 @@ public abstract class BaseServiceImpl<Mapper, Record, Example> implements BaseSe
 	 * 获取类泛型class
 	 * @return
 	 */
+	@SuppressWarnings("unchecked")
 	public Class<Mapper> getMapperClass() {
 		return (Class<Mapper>) ((ParameterizedType) getClass().getGenericSuperclass()).getActualTypeArguments()[0];
 	}

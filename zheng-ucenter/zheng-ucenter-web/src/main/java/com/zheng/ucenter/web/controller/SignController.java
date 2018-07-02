@@ -1,8 +1,7 @@
 package com.zheng.ucenter.web.controller;
 
-import com.zheng.common.base.BaseController;
-import com.zheng.ucenter.common.constant.UcenterResult;
-import com.zheng.ucenter.common.constant.UcenterResultConstant;
+import javax.servlet.http.HttpServletRequest;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -11,7 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.servlet.http.HttpServletRequest;
+import com.zheng.common.base.BaseController;
+import com.zheng.ucenter.common.constant.UcenterResult;
+import com.zheng.ucenter.common.constant.UcenterResultConstant;
 
 /**
  * 注册控制器
@@ -20,7 +21,8 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class SignController extends BaseController {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(SignController.class);
+    @SuppressWarnings("unused")
+	private static final Logger LOGGER = LoggerFactory.getLogger(SignController.class);
 
     @RequestMapping(value = "/signup", method = RequestMethod.GET)
     public String signup(Model model) {

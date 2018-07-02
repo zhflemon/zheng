@@ -22,7 +22,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/manage/session")
 public class UpmsSessionController extends BaseController {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(UpmsSessionController.class);
+    @SuppressWarnings("unused")
+	private static final Logger LOGGER = LoggerFactory.getLogger(UpmsSessionController.class);
 
     @Autowired
     private UpmsSessionDao sessionDAO;

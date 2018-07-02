@@ -68,7 +68,11 @@ public class UcenterUserExample implements Serializable {
     }
 
     protected abstract static class GeneratedCriteria implements Serializable {
-        protected List<Criterion> criteria;
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 6320704721480245004L;
+		protected List<Criterion> criteria;
 
         protected GeneratedCriteria() {
             super();
@@ -769,15 +773,25 @@ public class UcenterUserExample implements Serializable {
         }
     }
 
-    public static class Criteria extends GeneratedCriteria implements Serializable {
+	public static class Criteria extends GeneratedCriteria implements Serializable {
 
-        protected Criteria() {
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = -5544657658918663585L;
+
+		protected Criteria() {
             super();
         }
     }
 
     public static class Criterion implements Serializable {
-        private String condition;
+        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 8697520428338874884L;
+
+		private String condition;
 
         private Object value;
 

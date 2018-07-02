@@ -23,7 +23,8 @@ import java.util.List;
 @BaseService
 public class UpmsSystemServiceImpl extends BaseServiceImpl<UpmsSystemMapper, UpmsSystem, UpmsSystemExample> implements UpmsSystemService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(UpmsSystemServiceImpl.class);
+    @SuppressWarnings("unused")
+	private static final Logger LOGGER = LoggerFactory.getLogger(UpmsSystemServiceImpl.class);
 
     @Autowired
     UpmsSystemMapper upmsSystemMapper;

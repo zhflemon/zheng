@@ -13,17 +13,17 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
-* PayMchService实现
-* Created by shuzheng on 2017/3/29.
-*/
+ * PayMchService实现 Created by shuzheng on 2017/3/29.
+ */
 @Service
 @Transactional
 @BaseService
 public class PayMchServiceImpl extends BaseServiceImpl<PayMchMapper, PayMch, PayMchExample> implements PayMchService {
 
-    private static final Logger log = LoggerFactory.getLogger(PayMchServiceImpl.class);
+	@SuppressWarnings("unused")
+	private static final Logger LOGGER = LoggerFactory.getLogger(PayMchServiceImpl.class);
 
-    @Autowired
-    PayMchMapper payMchMapper;
+	@Autowired
+	PayMchMapper payMchMapper;
 
 }

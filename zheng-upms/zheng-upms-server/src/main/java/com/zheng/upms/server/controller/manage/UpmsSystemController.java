@@ -34,6 +34,7 @@ import java.util.Map;
 @RequestMapping("/manage/system")
 public class UpmsSystemController extends BaseController {
 
+	@SuppressWarnings("unused")
 	private static final Logger LOGGER = LoggerFactory.getLogger(UpmsSystemController.class);
 
 	@Autowired

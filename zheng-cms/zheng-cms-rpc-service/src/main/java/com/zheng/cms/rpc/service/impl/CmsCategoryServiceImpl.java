@@ -21,7 +21,8 @@ import org.springframework.transaction.annotation.Transactional;
 @BaseService
 public class CmsCategoryServiceImpl extends BaseServiceImpl<CmsCategoryMapper, CmsCategory, CmsCategoryExample> implements CmsCategoryService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(CmsCategoryServiceImpl.class);
+    @SuppressWarnings("unused")
+	private static final Logger LOGGER = LoggerFactory.getLogger(CmsCategoryServiceImpl.class);
 
     @Autowired
     CmsCategoryMapper cmsCategoryMapper;
